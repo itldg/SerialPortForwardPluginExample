@@ -10,8 +10,6 @@
   <ItemGroup>
     <Reference Include="SerialPortForward">
       <HintPath>..\serial-port-forward\bin\Debug\SerialPortForward.exe</HintPath>
-      <Private>False</Private>
-      <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
   </ItemGroup>
 
@@ -21,5 +19,9 @@
       <PackagePath>\</PackagePath>
     </None>
   </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="Copy  &quot;$(TargetPath)&quot;  &quot;D:\Data\Code\Net\serial-port-forward\bin\Debug\plugins&quot;" />
+  </Target>
 
 </Project>
