@@ -8,6 +8,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Reference Include="ITLDG.BitConverterExtend">
+      <HintPath>..\serial-port-forward\bin\Debug\ITLDG.BitConverterExtend.dll</HintPath>
+    </Reference>
     <Reference Include="SerialPortForward">
       <HintPath>..\serial-port-forward\bin\Debug\SerialPortForward.exe</HintPath>
     </Reference>

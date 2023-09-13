@@ -1,4 +1,5 @@
 ﻿using System;
+using ITLDG;
 
 namespace SerialPortForward
 {
